@@ -1,0 +1,84 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IndexModel
+
+@attribute [Authorize]
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center centered">
+    <div class="upload">
+        <form method="post" action="/api/upload/yT4TwHnLK_ts6HGA5!NncxH9eN9CMG4q" enctype="multipart/form-data" runat="server" id="form">
+            <div class="form-group upload-file">
+                <p class="material-symbols-outlined" style="width: 100%">file_upload</p>
+                <label for="file" id="file-name">Select file</label>
+                <input type="file" name="file" id="file" class="form-control-file upload-file-button" required>
+            </div>
+            <div class="form-group upload-path-group">
+                <label for="path">Path</label>
+                <input type="text" name="path" id="path" class="form-control upload-path">
+            </div>
+        </form>
+        <button id="submit" class="upload-button">Upload</button>
+        <button id="submit-2" class="upload-button" style="background-color: indianred">Upload Random</button>
+        <div class="upload-button" style="margin-top: 2vh">
+            <span id="output">Output Link</span>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>  
+    $(document).ready(function () { 
+        let fileName = document.getElementById("file-name"); 
+        
+         $("#file").change(function() {
+            fileName.innerHTML = $('#file').get(0).files[0].name;
+         });
+        
+        $('#submit').on('click', function () {  
+             submitFile("api/upload/yT4TwHnLK_ts6HGA5!NncxH9eN9CMG4q");
+        });  
+        
+         $('#submit-2').on('click', function () {  
+            submitFile("api/upload2/yT4TwHnLK_ts6HGA5!NncxH9eN9CMG4q");
+         }); 
+    });  
+    
+    function submitFile(url){
+        let data = new FormData();
+        let files = $('#file').get(0).files;
+            
+        if (files.length > 0){
+            data.append("file", files[0]);
+        } else{
+            return;
+        }
+        
+        setColor("wheat");
+        
+        data.append("path", document.getElementById("path").value)
+                    
+        $.ajax({  
+                type: "POST",  
+                url: url,  
+                contentType: false,  
+                processData: false,  
+                data: data,
+                success: function(response){
+                    setColor("darkseagreen");
+                    window.setTimeout(() => setColor("cornflowerblue"),  2000);
+                    document.getElementById("output").innerHTML = response;
+                }
+        }); 
+    }
+    
+    function setColor(color){
+        let t = document.getElementsByClassName("top")[0];
+        t.style.backgroundColor = color;
+    }
+</script>  

@@ -1,0 +1,110 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #101010;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top{
+  height: 3vh;
+  background-color: cornflowerblue;
+  transition: background-color 0.75s ease;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1;
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-button{
+  margin-bottom: 1vh;
+  background-color: #202020;
+  border-style: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.input-button{
+  margin-top: 1vh;
+  background-color: #202020;
+  border-color: #101010;
+  color: white;
+}
+
+.input-button:focus{
+  background-color: #202020;
+  border-color: #101010;
+  color: white;
+}
+
+.upload{
+  width: 25rem;
+  background-color: #202020;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.upload-path-group{
+  background-color: cornflowerblue;
+  padding: 20px;
+  margin: 3vh 0;
+  border-radius: 10px;
+}
+
+.upload-path{
+  margin-top: 1vh;
+  background-color: #202020;
+  border-color: #101010;
+  color: white;
+}
+
+.upload-path:focus{
+  background-color: #202020;
+  border-color: #101010;
+  color: white;
+}
+
+.upload-file-button{
+  opacity: 0;
+  position: absolute;
+  height: 10.25rem;
+  cursor: crosshair;
+  transform: translate(-190px, -90px);
+}
+
+.upload-file{
+  margin-top: 1vh;
+  background-color: cornflowerblue;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+.upload-button{
+  margin-bottom: 1vh;
+  background-color: cornflowerblue;
+  border-style: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
