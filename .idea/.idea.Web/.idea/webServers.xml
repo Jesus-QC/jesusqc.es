@@ -9,6 +9,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="6bea5f00-3263-42de-a30a-cf18a45a9cb7" name="cdn">
+        <fileTransfer accessType="SFTP" host="servers.jesusqc.es" port="2022" sshConfigId="ec3162ac-5343-4a55-8fc1-d9eb9a9f8b67" sshConfig="jesus-qc.b8f1ccb4@servers.jesusqc.es:2022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

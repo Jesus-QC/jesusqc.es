@@ -10,7 +10,7 @@ public class FileController : Controller
     [Route("/f/{*path}")]
     public ActionResult Index(string path)
     {
-        var file = new FileInfo(Path.Combine(Environment.CurrentDirectory, "Cdn", "Public", path));
+        var file = new FileInfo(Path.Combine(Environment.CurrentDirectory, "Content", "Public", path));
 
         Console.ForegroundColor = file.Exists ? ConsoleColor.DarkCyan : ConsoleColor.Red;
         Console.WriteLine(path + $" was requested by {Request.Headers["CF-Connecting-IP"]}.");
@@ -27,7 +27,7 @@ public class FileController : Controller
     [Authorize]
     public ActionResult Private(string path)
     {
-        var file = new FileInfo(Path.Combine(Environment.CurrentDirectory, "Cdn", "Private", path));
+        var file = new FileInfo(Path.Combine(Environment.CurrentDirectory, "Content", "Private", path));
 
         Console.ForegroundColor = file.Exists ? ConsoleColor.DarkCyan : ConsoleColor.Red;
         Console.WriteLine(path + $" was requested by {Request.Headers["CF-Connecting-IP"]}.");

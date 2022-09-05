@@ -3,6 +3,7 @@
   <component name="SshConfigs">
     <configs>
       <sshConfig authType="PASSWORD" host="82.223.2.142" id="b1f8bbbc-79b2-4a78-af9c-ef8bfd37803b" port="2022" nameFormat="DESCRIPTIVE" username="jesus-qc.a1ce93c9" useOpenSSHConfig="true" />
+      <sshConfig authType="PASSWORD" host="servers.jesusqc.es" id="ec3162ac-5343-4a55-8fc1-d9eb9a9f8b67" port="2022" nameFormat="DESCRIPTIVE" username="jesus-qc.b8f1ccb4" useOpenSSHConfig="true" />
     </configs>
   </component>
 </project>

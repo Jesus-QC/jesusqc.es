@@ -2,6 +2,143 @@
 <project version="4">
   <component name="PublishConfigData" serverName="public" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="cdn">
+        <serverdata>
+          <mappings>
+            <mapping local="C:/Program Files/dotnet/sdk/6.0.301/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig" web="/" />
+            <mapping local="C:/Program Files/dotnet/sdk/6.0.301/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig" web="/" />
+            <mapping local="C:/Program Files/dotnet/sdk/6.0.301/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_6_default.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/App.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/App.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Cdn.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Controllers/AccountController.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Controllers/FileController.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/Files.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/Files.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/Private.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/Private.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/_Host.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/_Host.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/_Layout.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Pages/_Layout.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Program.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Properties/launchSettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Shared/MainLayout.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Shared/MainLayout.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Shared/NotLogged.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/Shared/NotLogged.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/_Imports.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/_Imports.razor" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/appsettings.Development.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/appsettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/obj/Debug/net6.0/Cdn.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/obj/Debug/net6.0/Cdn.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/obj/Debug/net6.0/Cdn.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/obj/Debug/net6.0/Cdn.RazorAssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/bootstrap/bootstrap.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/bootstrap/bootstrap.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/FONT-LICENSE" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/ICON-LICENSE" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/README.md" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/css/site.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Cdn/wwwroot/favicon.ico" web="/" />
+            <mapping local="$PROJECT_DIR$/ConsoleUtils/CommandHandler.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/ConsoleUtils/ConsoleUtils.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/ConsoleUtils/Log.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/ConsoleUtils/obj/Debug/net6.0/ConsoleUtils.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/ConsoleUtils/obj/Debug/net6.0/ConsoleUtils.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/ConsoleUtils/obj/Debug/net6.0/ConsoleUtils.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Index.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Index.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Index.cshtml.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Shared/_Layout.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Shared/_Layout.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Shared/_ValidationScriptsPartial.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/Shared/_ValidationScriptsPartial.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/_ViewImports.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/_ViewImports.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/_ViewStart.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pages/_ViewStart.cshtml" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Program.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Properties/launchSettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/Pub.csproj" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/appsettings.Development.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/appsettings.json" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/obj/Debug/net6.0/Pub.AssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/obj/Debug/net6.0/Pub.GeneratedMSBuildEditorConfig.editorconfig" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/obj/Debug/net6.0/Pub.GlobalUsings.g.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/obj/Debug/net6.0/Pub.RazorAssemblyInfo.cs" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/css/site.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/favicon.ico" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/js/site.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/LICENSE" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation/LICENSE.md" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation/dist/additional-methods.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation/dist/jquery.validate.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery/LICENSE.txt" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery/dist/jquery.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery/dist/jquery.min.js" web="/" />
+            <mapping local="$PROJECT_DIR$/Pub/wwwroot/lib/jquery/dist/jquery.min.map" web="/" />
+            <mapping local="$PROJECT_DIR$/Web.sln" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="public">
         <serverdata>
           <mappings>
