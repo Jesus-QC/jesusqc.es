@@ -2,25 +2,21 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Cdn.Pages;
+namespace Cdn.Controllers;
 
-public class LoginModel : PageModel
+[Controller]
+[Route("account")]
+public class AccountController : Controller
 {
-    private readonly ILogger<LoginModel> _logger;
-
-    public LoginModel(ILogger<LoginModel> logger)
+    [HttpPost]
+    [Route("login")]
+    public async Task<IActionResult> Login(string password)
     {
-        _logger = logger;
-    }
-
-    public async Task<IActionResult> OnPost(string password)
-    {
-        if (password != "7v#8haAVq72t3Py7v#8haAVq72t3Py")
+        if (password != "Jquiroga132005!C")
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine($"{Request.Headers["CF-Connecting-IP"]} has failed the password. ({password})");
+            Console.WriteLine($"{HttpContext.Request.Headers["CF-Connecting-IP"]} has failed the password. ({password})");
             return Unauthorized();
         }
 
@@ -29,9 +25,9 @@ public class LoginModel : PageModel
             new (ClaimTypes.Name, "owner")
         } , CookieAuthenticationDefaults.AuthenticationScheme, "owner", "owner");
         var claimsPrincipal = new ClaimsPrincipal(claimsId);
-
+        
         await HttpContext.SignInAsync(claimsPrincipal);
-
-        return LocalRedirect("/");
+        
+        return Redirect("/Files");
     }
 }

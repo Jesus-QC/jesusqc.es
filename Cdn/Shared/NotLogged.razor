@@ -1,0 +1,45 @@
+﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authentication.Cookies
+@inject IHttpContextAccessor HttpContextAccessor
+@inject NavigationManager NavManager
+
+<PageTitle>Login</PageTitle>
+
+<body>
+<div style="top: 50%; left: 50%; position: absolute; transform: translate(-50%, -50%);">
+    <div class="login-container">
+        <h5>Jesus-QC</h5>
+        <form method="post" action="/account/login">
+            <input type="password" name="password" class="form-control input-button"/>
+        </form>
+    </div>
+</div>
+</body>
+
+<style>
+    body{
+        background-color: #1a1a1a; 
+        color: white;
+        text-align: center;
+    }
+    
+    .login-container{
+        background-color: #202020;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    input{
+        background-color: #101010 !important;
+        border-color: #303030 !important;
+        color: white !important;
+    }
+    
+    input:focus{
+        background-color: #101010 !important;
+        border-color: #303030 !important;
+        color: white !important;
+    }
+</style>
+
