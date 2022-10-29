@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
-html {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
 }
 
@@ -13,51 +16,128 @@ html {
 body {
   background-color: #101010;
   color: white;
-  font-family: 'Poppins', sans-serif;
-}
-
-.top{
-  height: 5vh;
-  background-color: cornflowerblue;
-  transition: background-color 0.75s ease;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 1;
-  font-size: 2rem;
-}
-
-.centered{
-  position: absolute;
-  top: 49.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.contact{
-  cursor: crosshair;
-  position: absolute;
-  top: 82.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  padding: 1.5em;
-  background-color: #151515;
-  border-radius: 10px;
-  inline-size: max-content;
-}
-
-.contact-link{
-  margin: 0 3vw 0 3vw;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 a{
-  cursor: grab;
+  cursor: pointer;
   color: white;
   transition: color 200ms cubic-bezier(.4,0,.2,1) 0ms;
   transition-duration: 0.5s;
 }
 
 a:hover{
-  color: lightcoral;
+  color: #5588ed;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-corner{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #101010;
+}
+
+.card {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background-color: #303030;
+  border-color: #606060;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+}
+
+.circle {
+  display: inline-flex;
+  padding: 0 2px;
+  transition: 0.3s all;
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.circle:hover{
+  opacity: 100%;
+}
+
+.box {
+  align-items: center;
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 1px;
+}
+
+.red {
+  background-color: #f55e5b;
+}
+
+.yellow {
+  background-color: #f6ce4b;
+}
+
+.green {
+  background-color: #05e85d;
+}
+
+.window-title{
+  font-size: 1rem;
+  padding: 0 2px;
+  font-weight: bold;
+}
+
+.window-body{
+  background-color: #252525;
+  width: 99%;
+  height: 100%;
+  margin: 0 0.5% 0.5% 0.5%;
+  border-radius: 10px;
+  padding: 8px 12px;
+  overflow-y: scroll;
+}
+
+.cursor {
+  animation: blink 2s infinite;
+}
+
+.option{
+  text-decoration: white underline;
+  cursor: pointer;
+}
+
+.output{
+  font-size: 1.5rem;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
