@@ -40,7 +40,7 @@ function showInfo(){
     if(d.getMonth() < 3)
         years--;
     
-    logLineWithColor("Hi! My name is Jesus and I am a " + years + " years old student that lives in Spain <span class='output' style='color: red'>■</span><span class='output'>■</span><span class='output' style='color:red'>■</span>! 😃", "#f6ce4b");
+    logLineWithColor("Hi! My name is Jesus and I am a " + years + " years old student who lives in Spain <span class='output' style='color: red'>■</span><span class='output'>■</span><span class='output' style='color:red'>■</span>! 😃", "#f6ce4b");
     appendInput();
 }
 
