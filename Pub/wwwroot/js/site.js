@@ -140,7 +140,7 @@ function appendInput(options = ["Contact","Projects","Information","Help"]){
 function commandNotFound(){
     logWithColor("Command not found! Use ", "#f55e5b");
     win.append("<span class='option output' style='color: #3480eb' onclick='handleCommand(\"help\")'>Help</span>");
-    logLineWithColor(" for showing a list of available commands.", "#f55e5b");
+    logLineWithColor(" to show a list of available commands.", "#f55e5b");
 }
 
 function deleteInput(){
