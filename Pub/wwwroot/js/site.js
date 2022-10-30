@@ -1,18 +1,19 @@
 ﻿let win = undefined;
-let systemsRestarting = false;
+let input = undefined;
+let handlingCommand = false;
 
 $(document).ready(() => {
     win = $("#window")
+    input = $("#input");
     
     log("Welcome!");
     logLineWithColor(" JesusCore V 0.0.1", "#57befa")
+    logLineWithColor("Feel free to use both the interactive buttons or the input at the end!", "red")
     
     appendInput();
 });
 
 function showContact(){
-    logWithColor("> ", "#f55e5b")
-    logLine("Contact")
     logLineWithColor("😉 You can contact me in the following platforms:", "#f6ce4b");
     logWithColor("- Email: ", "#f6ce4b");
     logLinkLine("contact@jesusqc.es", "mailto:contact@jesusqc.es")
@@ -23,18 +24,14 @@ function showContact(){
 }
 
 function showProjects(){
-    logWithColor("> ", "#f55e5b")
-    logLine("Projects")
     logLineWithColor("😶 I don't have a projects page yet! While I make it you can check some of my public projects in my github account. 😃", "#f6ce4b");
     logWithColor("- Github: ", "#f6ce4b");
     logLinkLine("https://github.com/Jesus-QC", "https://github.com/Jesus-QC");
+    logLineWithColor("👀 There you can also find the code of this website!", "#42c2f5")
     appendInput();
 }
 
 function showInfo(){
-    logWithColor("> ", "#f55e5b")
-    logLine("Info")
-
     let d = new Date();
     let years = d.getFullYear() - 2005
     if(d.getMonth() < 3)
@@ -45,57 +42,105 @@ function showInfo(){
 }
 
 function restartSystem(){
-    if (systemsRestarting)
-        return;
+    logWithColor("Restart command received. Restarting system", "red")
     
-    systemsRestarting = true;
-    
-    logWithColor("> ", "#f55e5b")
-    logLine("Restart")
-    logWithColor("Restarting system", "red")
     setTimeout(() => {
         logWithColor(".", "red")
-        setTimeout(() => {
-            logWithColor(".", "red")
-            setTimeout(() => {
-                logWithColor(".", "red")
-                setTimeout(() => {
-                    location.reload()
-                }, 500);
-            }, 500);
-        }, 500);
+    }, 1000);
+
+    setTimeout(() => {
+        logWithColor(".", "red")
+    }, 2000);
+
+    setTimeout(() => {
+        logWithColor(".", "red")
+    }, 3000);
+
+    setTimeout(() => {
+        location.reload()
+    }, 3500);
+    
+    win.scrollTop(win[0].scrollHeight)
+}
+
+function showSecret(){
+    logLine("You have been hacked!");
+    
+    setTimeout(() =>{
+        logLine("<span class='output' style='color: #ebab34'>[debug]</span> Getting IP")
     }, 500);
+
+    setTimeout(() =>{
+        logLine("<span class='output' style='color: #ebab34'>[debug]</span> IP Granted: localhost")
+    }, 2000);
+    
+    setTimeout(() =>{
+        logLine("<span class='output' style='color: #349eeb'>[info]</span> Sending DOS Attack")
+    },3000);
+
+    setTimeout(() =>{
+        logLine("<span class='output' style='color: #f74940'>[error]</span> FATAL ERROR 500, ENABLING RESCUE MODE")
+    },4500);
+
+    setTimeout(() =>{
+        restartSystem()
+    },5500);
+}
+
+function rickProcedure(){
+    setTimeout(() =>{
+        logLine("<span class='output' style='color: #f74940'>[fatal error]</span> System Corrupted");
+    }, 500);
+
+    setTimeout(() =>{
+        logLine("<span class='output' style='color: #349eeb'>[info]</span> Starting Rick Procedure...");
+    }, 1500);
+
+    setTimeout(() =>{
+        location.assign("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    }, 3000);
 }
 
 function showHelp(){
-    logWithColor("> ", "#f55e5b")
-    logLine("Help")
     logLineWithColor("Available commands:", "#f55e5b");
     logWithColor("- ", "#57befa")
-    win.append("<span class='option output' onclick='deleteInput(); showContact()'>Contact</span><br>");
+    win.append("<span class='option output' onclick='handleCommand(\"contact\")'>Contact</span><br>");
     logWithColor("- ", "#57befa")
-    win.append("<span class='option output' onclick='deleteInput(); showProjects()'>Projects</span><br>");
+    win.append("<span class='option output' onclick='handleCommand(\"projects\")'>Projects</span><br>");
     logWithColor("- ", "#57befa")
-    win.append("<span class='option output' onclick='deleteInput(); showHelp()'>Help</span><br>");
+    win.append("<span class='option output' onclick='handleCommand(\"information\")'>Information</span><br>");
     logWithColor("- ", "#57befa")
-    win.append("<span class='option output' onclick='deleteInput(); restartSystem()'>Restart System</span><br>");
+    win.append("<span class='option output' onclick='handleCommand(\"help\")'>Help</span><br>");
     logWithColor("- ", "#57befa")
-    win.append("<span class='option output' onclick='deleteInput(); log(\"You have been hacked! IP: localhost<br>Ups 🤦 error 500.<br>\"); appendInput();'>#6/qa@w!</span><br>");
+    win.append("<span class='option output' onclick='handleCommand(\"restart system\")'>Restart System</span><br>");
+    logWithColor("- ", "#57befa")
+    win.append("<span class='option output' onclick='handleCommand(\"clear\")'>Clear</span><br>");
+    logWithColor("- ", "#57befa")
+    win.append("<span class='option output' onclick='handleCommand(\"#6/qa@w!\")'>#6/qa@w!</span><br>");
     
     appendInput();
 }
 
-function appendInput(options = ["showContact()","Contact","showProjects()","Projects","showInfo()","Information","showHelp()","Help"]){
+function appendInput(options = ["Contact","Projects","Information","Help"]){
+    win.scrollTop(win[0].scrollHeight)
     setTimeout(() => {
         win.append("<br><div></div>");
         let container = win.find("div:last");
         container.append("<span class='output' style='color: #05e85d'>jesusqc@core </span>")
         container.append("<span class='cursor output'>$ </span>")
 
-        for (let i = 0; i < options.length; i += 2) {
-            container.append("<span class='option output' onclick='deleteInput(); " + options[i] + "'>" + options[i + 1] + "</span> ");
+        for (let i = 0; i < options.length; i++) {
+            container.append("<span class='option output' onclick='handleCommand(\"" + options[i] + "\");'>" + options[i] + "</span> ");
         }
+        win.scrollTop(win[0].scrollHeight)
+        handlingCommand = false;
     }, 500);
+}
+
+function commandNotFound(){
+    logWithColor("Command not found! Use ", "#f55e5b");
+    win.append("<span class='option output' style='color: #3480eb' onclick='handleCommand(\"help\")'>Help</span>");
+    logLineWithColor(" for showing a list of available commands.", "#f55e5b");
 }
 
 function deleteInput(){
@@ -122,7 +167,73 @@ function logLinkLine(text, link){
     win.append("<a href='" + link + "' class='option output'>" + text + "</a><br>")
 }
 
-$("#close").click(() => {
+function handleCommand(command){
+    if (handlingCommand)
+        return;
+    
+    handlingCommand = true;
+    
     deleteInput();
-    restartSystem();
+    logWithColor("> ", "#f55e5b");
+    logLine(capitalizeTitle(command));
+    
+    switch (command.toLowerCase()){
+        case "help" || "h":
+            showHelp();
+            break;
+            
+        case "projects":
+            showProjects();
+            break;
+            
+        case "contact":
+            showContact();
+            break;
+            
+        case "info":
+        case "information":
+            showInfo();
+            break;
+            
+        case "restart":
+        case "restart system":
+            restartSystem();
+            break;
+            
+        case "clear":
+            win.empty();
+            logLine("Console cleared.")
+            appendInput();
+            break;
+            
+        case "#6/qa@w!":
+            showSecret();
+            break;
+            
+        case ":(){ :|:& };:":
+            rickProcedure();
+            break;
+            
+        default:
+            commandNotFound();
+            appendInput();
+            break;
+    }
+}
+
+function capitalizeTitle(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+$("#close").click(() => {
+    handleCommand("restart system")
+});
+
+$("#minimize").click(() => {
+    handleCommand(":(){ :|:& };:")
+});
+
+$("#input").change(() => {
+    handleCommand(input.val());
+    input.val("")
 });
