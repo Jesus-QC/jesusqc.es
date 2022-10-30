@@ -1,4 +1,0 @@
-C:\Users\jesus\AppData\Local\Temp\rider-publish6728543194592720015\appsettings.Development.json
-C:\Users\jesus\AppData\Local\Temp\rider-publish6728543194592720015\appsettings.json
-C:\Users\jesus\AppData\Local\Temp\rider-publish6728543194592720015\Pub.pdb
-C:\Users\jesus\AppData\Local\Temp\rider-publish6728543194592720015\Pub
